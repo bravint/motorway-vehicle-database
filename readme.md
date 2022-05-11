@@ -1,4 +1,4 @@
-# Motorway Vehicle database
+# Motorway Vehicle Database
 
 ## Introduction
 
