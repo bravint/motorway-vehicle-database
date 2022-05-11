@@ -16,6 +16,7 @@ const fetchVehicles = async () => {
             updatedAt: new Date(),
         };
     });
+
     return VehicleData;
 };
 

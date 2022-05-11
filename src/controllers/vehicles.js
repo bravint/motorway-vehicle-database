@@ -11,7 +11,6 @@ const getVehicles = async (req, res, next) => {
             status: SERVER_SUCCESS.OK.STATUS,
             data: fetchedVehicles,
         });
-        
     } catch (error) {
         next(error);
     }

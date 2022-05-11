@@ -17,9 +17,13 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// route
 app.use('/api/v1/vehicles', vehicleRouter);
+
+// error handling middleware
 app.use(errorHandler);
 
+// catch all/test route
 app.get('*', (req, res) => {
     res.send(SERVER_STATUS.HELLO);
 });
