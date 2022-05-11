@@ -14,7 +14,7 @@ Uses: **Node.js | Express | Sequelize | postgreSQL | Axios**
 
 ## Current Status
 
-**Completed** : Database seeded with all currently available models manufactured and sold by Honda in the USA.
+**Completed** : Database seeded with all models manufactured and sold by Honda in the USA.
 
 ## Technologies Used
 
