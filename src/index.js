@@ -4,7 +4,8 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 
-const vehicleRouter = require('./routes/vehicles')
+const vehicleRouter = require('./routes/vehicles');
+const errorHandler = require('./utils/middleware/errorHandler');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/api/v1/vehicles', vehicleRouter);
+app.use(errorHandler);
 
 app.get('*', (req, res) => {
     res.send('Hello Motorway!');
