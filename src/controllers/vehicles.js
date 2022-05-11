@@ -1,7 +1,7 @@
 const db = require('../../db/models');
 const { SERVER_SUCCESS } = require('../utils/config');
 
-const vehicles = db.Vehicles;
+const vehicles = db.vehicles;
 
 const getVehicles = async (req, res, next) => {
     try {

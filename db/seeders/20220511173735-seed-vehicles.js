@@ -32,7 +32,7 @@ module.exports = {
          * }], {});
          */
 
-        await queryInterface.bulkInsert('Vehicles', await fetchVehicles(), {});
+        await queryInterface.bulkInsert('vehicles', await fetchVehicles(), {});
     },
 
     async down(queryInterface, Sequelize) {
@@ -43,6 +43,6 @@ module.exports = {
          * await queryInterface.bulkDelete('People', null, {});
          */
 
-        await queryInterface.bulkDelete('Vehicles', null, {});
+        await queryInterface.bulkDelete('vehicles', null, {});
     },
 };
