@@ -34,3 +34,8 @@ Data sourced from the NHTSA Product Information Catalog Vehicle Listing at https
 3. Create vehicle table in your database <code>npx sequelize-cli db:migrate</code>
 4. Seed Database <code>npx sequelize-cli db:seed:all</code>
 5. Start development server: <code>npm run devstart</code>
+
+## Testing
+
+Route setup at: <code>/api/v1/vehicles/</code>
+Insomnia (https://insomnia.rest/) collection file can be found in the api_test folder
