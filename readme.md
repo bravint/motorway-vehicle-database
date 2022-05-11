@@ -37,5 +37,5 @@ Data sourced from the NHTSA Product Information Catalog Vehicle Listing at https
 
 ## Testing
 
-Route setup at: <code>/api/v1/vehicles/</code>
-Insomnia (https://insomnia.rest/) collection file can be found in the api_test folder
+Route setup at: <code>/api/v1/vehicles/</code> \
+[Insomnia](https://insomnia.rest) collection file can be found in the <code>api_test</code> folder
