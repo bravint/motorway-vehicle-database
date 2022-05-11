@@ -1,11 +1,10 @@
 'use strict';
 
 const axios = require('axios');
+const { API_URL } = require('../../src/utils/config');
 
 const fetchVehicles = async () => {
-    const response = await axios.get(
-        'https://vpic.nhtsa.dot.gov/api//vehicles/GetModelsForMake/honda?format=json'
-    );
+    const response = await axios.get(API_URL);
 
     const fetchedVehicles = response.data.Results;
 

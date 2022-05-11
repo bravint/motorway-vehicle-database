@@ -6,6 +6,7 @@ const morgan = require('morgan');
 
 const vehicleRouter = require('./routes/vehicles');
 const errorHandler = require('./utils/middleware/errorHandler');
+const { SERVER_STATUS } = require('./utils/config');
 
 const app = express();
 
@@ -20,9 +21,9 @@ app.use('/api/v1/vehicles', vehicleRouter);
 app.use(errorHandler);
 
 app.get('*', (req, res) => {
-    res.send('Hello Motorway!');
+    res.send(SERVER_STATUS.HELLO);
 });
 
 app.listen(port, () => {
-    console.log(`Server started at port ${port}`);
+    console.log(`${SERVER_STATUS.STARTED}${port}`);
 });

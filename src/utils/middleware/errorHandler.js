@@ -1,12 +1,14 @@
+const { ERROR_DEFAULTS } = require('../config');
+
 const errorHandler = (error, req, res, next) => {
-    const statusCode = error.statusCode || 500;
-    const status = error.status || 'Failed';
-    const message = error.message || 'Failed to fetch vehicle details';
+    const statusCode = error.statusCode || ERROR_DEFAULTS.STATUS_CODE;
+    const status = error.status || ERROR_DEFAULTS.STATUS;
+    const message = error.message || ERROR_DEFAULTS.MESSAGE;
 
     res.status(statusCode).json({
         status: status,
-        message: message
+        message: message,
     });
-}
+};
 
-module.exports = errorHandler
+module.exports = errorHandler;
