@@ -24,7 +24,7 @@ Uses: **Node.js | Express | Sequelize | postgreSQL | Axios**
 
 ## API Used
 
-Data sourced from the NHTSA Product Information Catalog Vehicle Listing at https://vpic.nhtsa.dot.gov/api/.
+Data sourced from the [NHTSA Product Information Catalog Vehicle Listing](https://vpic.nhtsa.dot.gov/api/).
 
 ## Install
 
